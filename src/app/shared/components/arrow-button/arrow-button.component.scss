@@ -1,0 +1,9 @@
+.arrow_btn {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 3px 6px #FD68454D;
+
+  &--left {
+    transform: rotate(180deg);
+  }
+}

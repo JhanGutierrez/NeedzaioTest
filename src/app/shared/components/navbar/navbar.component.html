@@ -1,0 +1,16 @@
+<nav class="navbar container-xl z-50" (scroll)="onScroll()" #navbar>
+  <div class="container-lg flex items-center justify-between py-1">
+    <app-logo size="sm"></app-logo>
+    <ul class="flex items-center gap-2">
+      <li class="list-none"><span (click)="scrollTo('home')" class="decoration-none white-text pointer">Home</span></li>
+      <li class="list-none"><span (click)="scrollTo('services',80)"
+          class="decoration-none white-text pointer">Services</span>
+      </li>
+      <li class="list-none"><span (click)="scrollTo('about-us',180)" class="decoration-none white-text pointer">About
+          Us</span>
+      </li>
+      <li class="list-none"><span class="decoration-none white-text pointer" (click)="logout()">Logout</span>
+      </li>
+    </ul>
+  </div>
+</nav>

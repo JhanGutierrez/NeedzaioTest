@@ -1,0 +1,75 @@
+/* HEADER */
+.header {
+  width: 100%;
+  background-image: url('/assets/images/section_01_bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  &__container {
+    padding-top: 8rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+/* SERVICES SECTION */
+.services {
+  width: 100%;
+  background-image: url('/assets/images/section_02.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  &__container {
+    padding-top: 20rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cards_container {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+
+    app-small-card {
+      width: fit-content;
+    }
+  }
+}
+
+/* ABOUT US */
+.about_us {
+  background-image: url('/assets/images/section_04.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20rem;
+  }
+}
+
+.left_grid {
+  position: relative;
+  background-image: url('/assets/images/path.svg');
+  background-size: auto 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* -- JOIN NOW */
+.join_now {
+  margin-top: 14rem;
+  background-image: url('/assets/images/join_card.svg');
+  background-size: auto 100%;
+  background-position: right;
+
+  &__text {
+    height: 340px;
+  }
+}

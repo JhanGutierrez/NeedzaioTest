@@ -1,0 +1,62 @@
+<section class="login container-xl">
+  <div class="login__container items-center justify-items-center p-2">
+    <!-- #region Left column -->
+    <div>
+      <app-logo size="xl"></app-logo>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Right column -->
+    <div>
+      <h1 class="login__title uppercase fornt-bold text-lg pl-2-5 mb-3 gray-200-text relative">Welcome</h1>
+
+      <dir class="red-50-bg p-1 red-400-text text-center mb-1 border red-border" *ngIf="errorMessage">
+        <span>{{ errorMessage }}</span>
+      </dir>
+
+      <form class="login_form" [formGroup]="loginForm" (submit)="onSubmit()">
+
+        <div class="mb-1">
+          <input type="email" placeholder="EMAIL"
+            class="form-control {{ loginForm.get('email')?.touched && loginForm.get('email')?.invalid ? 'outline red-outline':'' }}"
+            formControlName="email">
+
+          <span class="red-200-text text-sm mt-05 block"
+            *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid">
+            Invalid e-mail.
+          </span>
+        </div>
+
+        <div class="mb-1">
+          <input type="password" placeholder="PASSWORD"
+            class="form-control {{ loginForm.get('password')?.touched && loginForm.get('password')?.invalid ? 'outline red-outline':'' }}"
+            formControlName="password">
+
+          <span class="red-200-text text-sm mt-05 block"
+            *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.errors?.['required']">
+            This field is required.
+          </span>
+        </div>
+
+        <a routerLink="['/']" class="block gray-100-text my-3 mr-0 ml-auto pointer">Forgot your password?</a>
+
+        <div class="text-center">
+          <app-button buttonType="submit" buttonValue="Login" buttonColor="blue" [disabled]="!loginForm.valid">
+          </app-button>
+          <span class="mt-1 block text-sm gray-100-text">
+            DON'T HAVE AN ACCOUNT YET?
+            <a routerLink="['/']" class="blue-text pointer">REGISTER</a></span>
+        </div>
+      </form>
+
+    </div>
+    <!-- #endregion -->
+  </div>
+
+  <!-- #region Spinner -->
+  <div *ngIf="spinnerService.isLoading|async">
+    <app-spinner></app-spinner>
+  </div>
+  <!-- #endregion -->
+
+</section>

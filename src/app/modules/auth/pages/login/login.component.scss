@@ -1,0 +1,35 @@
+.login {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/assets/images/login_bg.svg');
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  &__container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  /* TITLE */
+  &__title::after {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background-color: var(--orange-color);
+    position: absolute;
+    left: 0;
+  }
+
+}
+
+/* FORM */
+.login_form {
+  width: 450px;
+
+  a {
+    width: fit-content;
+  }
+}

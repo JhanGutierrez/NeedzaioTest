@@ -1,0 +1,144 @@
+<!-- #region Header -->
+<header class="header container-xl" id="home">
+  <app-navbar></app-navbar>
+
+  <div class="container-lg header__container">
+    <div class="flex items-center">
+      <div class="white-text">
+        <h1 class="font-bold text-xxl ">We Get Pet Care!</h1>
+        <p class="text-md my-3">
+          For over 17 Years, Fetch! Pet Care has been a trusted <br> partner in keeping pets healthy and happy!
+        </p>
+        <div class="flex items-center gap-1">
+          <app-button buttonType="submit" buttonValue="Schedule Service" buttonColor="blue"></app-button>
+          <span class="text-md">Or Call 866.338.2463</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center">
+      <img src="/assets/images/dog_01.png" alt="" class="block mt-3 ml-auto mr-0" width="500">
+    </div>
+  </div>
+</header>
+<!-- #endregion -->
+
+<!-- #region Services -->
+<section class="services container-xl" id="services">
+  <div class="container-md services__container">
+
+    <div>
+      <h2 class="orange-text text-xl font-bold mb-1">Our Services</h2>
+      <p class="gray-100-text text-md">National Brand With a Local Feel. <br> Experience the Fetch! Difference</p>
+      <p class="font-bold my-1 orange-text text-md">Enter Your Location and Fetch Our Services</p>
+      <app-arrow-input placeholder="Zip Code"></app-arrow-input>
+    </div>
+
+    <div class="cards_container flec justify-end">
+      <div class="cards_container__cards gap-2">
+        <app-small-card imageUrl="/assets/images/dog_icon.svg" title="Dog Walking"></app-small-card>
+        <app-small-card imageUrl="/assets/images/cat_icon.svg" title="Pet Sitting"></app-small-card>
+        <app-small-card imageUrl="/assets/images/house_icon.svg" title="Overnight Care"></app-small-card>
+        <app-small-card imageUrl="/assets/images/footprint_icon.svg" title="Other Services"></app-small-card>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-lg testimonials_container">
+    <h2 class="testimonials__title orange-text text-xl font-bold text-center mb-3" style="margin-top: 24rem;">Here's
+      what pet
+      owners have to <br> say
+      about
+      Fetch! Pet
+      Care...</h2>
+    <app-card-slider></app-card-slider>
+  </div>
+</section>
+<!-- #endregion -->
+
+<!-- #region About us -->
+<section class="about_us container-xl" id="about-us">
+  <div class="container-md about_us__container">
+    <div class="left_grid">
+      <div class="flex flex-col">
+        <app-small-card imageUrl="/assets/images/calendar_icon.svg" title="Reserve"></app-small-card>
+        <app-small-card imageUrl="/assets/images/little_girl_icon.svg" title="Match" [ngClass]="'self-end'">
+        </app-small-card>
+        <app-small-card imageUrl="/assets/images/cat_face.svg" title="Relax"></app-small-card>
+      </div>
+    </div>
+
+    <div class="right_grid flex justify-end">
+      <div class="right_grid__container">
+        <h2 class="orange-text font-bold text-xl">How it Works</h2>
+        <p class="gray-100-text text-md">Because finding a good pet sitter shouldn’t be <br> a hassle. With Fetch! It’s
+          as
+          easy
+          as…</p>
+        <p class="font-bold my-1 orange-text text-md">Enter Your Location and Fetch Our Services</p>
+        <app-arrow-input placeholder="Zip Code"></app-arrow-input>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-md join_now p-2 blue-bg rounded-md">
+    <div class="flex items-center gap-2">
+      <img src="/assets/images/dog_02.png" alt="" width="340">
+      <div class="join_now__text flex flex-col justify-between">
+        <h2 class="yellow-text text-xl text-bold">Make Fetch! Happen</h2>
+        <p class="text-md text-white gray-50-text">If you love pets and want exciting work, apply to be a Fetch! Pet
+          Care Provider!
+          We
+          train every team member and provide ongoing support to help you get the most from your experience.</p>
+        <app-button buttonType="button" buttonValue="Join Now" buttonColor="white"></app-button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- #endregion -->
+
+<!-- #region Footer -->
+<footer class="mt-3 container-xl">
+  <img src="/assets/images/footer.svg" alt="" width="100%" class="block">
+  <div class="orange-bg pt-3 pb-2">
+    <div class="container-lg flex justify-between">
+      <ul>
+        <li class="text-md font-bold yellow-text list-none mb-2">About</li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Locations</a></li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Franchise With Us</a></li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Partners</a></li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">About Us</a></li>
+        <li class="list-none"><a href="" class="decoration-none white-text">Make Fetch Happen!</a></li>
+      </ul>
+
+      <ul>
+        <li class="text-md font-bold yellow-text list-none mb-2">Resources</li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Reviews</a></li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Pet Resource Center</a></li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Pet Resource Center</a></li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Blog</a></li>
+        <li class="list-none"><a href="" class="decoration-none white-text">News</a></li>
+      </ul>
+
+      <ul>
+        <li class="text-md font-bold yellow-text list-none mb-2">&nbsp;</li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Gift Cards</a></li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Services</a></li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Franchisee Login</a></li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Terms of Use</a></li>
+        <li class="list-none"><a href="" class="decoration-none white-text">Privacy Policy</a></li>
+      </ul>
+
+      <ul>
+        <li class="text-md font-bold yellow-text list-none mb-2">NewsLetter</li>
+        <li class="mb-1 list-none"><a href="" class="decoration-none white-text">Sign up to receive the Fetch! Family
+            Newsletter</a></li>
+        <li class="mb-1 list-none">
+          <app-arrow-input placeholder="Email Adress"></app-arrow-input>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- #endregion -->

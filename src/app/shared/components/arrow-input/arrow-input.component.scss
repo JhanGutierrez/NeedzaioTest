@@ -1,0 +1,20 @@
+.arrow_input_container {
+  width: fit-content;
+
+  &__input {
+    box-shadow: 0px 3px 6px #00000029;
+    min-width: 300px;
+  }
+
+  &__input::placeholder {
+    color: var(--gray-color-100);
+  }
+
+  app-arrow-button {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+  }
+
+}

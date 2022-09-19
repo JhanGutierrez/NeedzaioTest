@@ -1,0 +1,47 @@
+<div class="relative">
+
+  <div class="cards_container flex items-center" #cardsContainer>
+
+    <!-- #region Card 1 -->
+    <div class="card card--orange-l" index="0">
+      <img src="/assets/images/person_01.jpg" alt="" class="rounded-full ">
+      <h2 class="white-text text-lg mb-2 font-normal">Kenned Dsouza 0</h2>
+      <p class="white-text text-md opacity-05">" I like that I got to meet the dog Walker who is walking my dog daily
+        and consult
+        with her. I also appreciate
+        the daily communication I get about the dog and how my dog is doing"</p>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Card 2 -->
+    <div class="card card--blue z-3" index="1">
+      <img src="/assets/images/person_01.jpg" alt="" class="rounded-full">
+      <h2 class="white-text text-lg mb-2 font-normal">Kenned Dsouza 1</h2>
+      <p class="white-text text-md opacity-05">" I like that I got to meet the dog Walker who is walking my dog daily
+        and consult
+        with her. I also appreciate
+        the daily communication I get about the dog and how my dog is doing"</p>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Card 3 -->
+    <div class="card card--orange-r" index="2">
+      <img src="/assets/images/person_01.jpg" alt="" class="rounded-full">
+      <h2 class="white-text text-lg mb-2 font-normal">Kenned Dsouza 2</h2>
+      <p class="white-text text-md opacity-05">" I like that I got to meet the dog Walker who is walking my dog daily
+        and consult
+        with her. I also appreciate
+        the daily communication I get about the dog and how my dog is doing"</p>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Buttons -->
+    <div class="slider_buttons flex justify-between">
+      <app-arrow-button direction="left" (click)="previousCard()"></app-arrow-button>
+      <app-arrow-button (click)="nextCard()"></app-arrow-button>
+    </div>
+    <!-- #endregion -->
+
+  </div>
+
+</div>
